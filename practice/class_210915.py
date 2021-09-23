@@ -34,25 +34,43 @@
 # print(kyle.tList)
 
 # 3 =======================================
-class Person:
-    def __init__(self):
-        self.name = None
-        self.age = None
+# class Person:
+#     def __init__(self):
+#         self.name = None
+#         self.age = None
+#
+#     def setName(self, newName):
+#         self.name = newName
+#         print("The name was set %s." %(newName))
+#
+#     def setAge(self, newAge):
+#         self.age = newAge
+#         print("The age was set %d" %newAge)
+#
+# k = Person()
+#
+# k.setName("Kyle")
+# k.setAge(30)
+#
+# print("k's name is %s, and his age is %d" % (k.name, k.age))
+
+
+# 4 ===============================================================
+class robot():
+    def __init__(self, name):
+        self.arm = 2
+        self.leg = 2
+        self.name = name
 
     def setName(self, newName):
         self.name = newName
-        print("The name was set %s." %(newName))
 
-    def setAge(self, newAge):
-        self.age = newAge
-        print("The age was set %d" %newAge)
+r = robot("Tammy")
 
-k = Person()
-
-k.setName("Kyle")
-k.setAge(30)
-
-print("k's name is %s, and his age is %d" % (k.name, k.age))
+print(r.arm, r.leg)
+print(r.name)
+r.setName("Gorilla")
+print(r.name)
 
 
 
