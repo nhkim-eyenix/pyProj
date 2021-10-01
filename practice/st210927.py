@@ -10,3 +10,4 @@ try:
     print('code value: %d[%s], char: %s' %(val, hex(val), ch))
 except ValueError:
     print("It doesn\'t exist the character you input!" % val)
+
